@@ -5,11 +5,15 @@ var ctx = canvas.getContext("2d");
 var colors = document.getElementsByClassName("jsColor");
 var range = document.getElementById("jsRange");
 var mode = document.getElementById("jsMode");
+var save = document.getElementById("jsSave");
 
 var INNITAL_COLOR = "#111111";
 
 canvas.width = 700;
 canvas.height = 700;
+
+ctx.fillStyle = "white";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 ctx.strokeStyle = INNITAL_COLOR;
 ctx.lineWidth = 2.5;
@@ -68,12 +72,25 @@ function handleCanvasClick(event) {
   }
 }
 
+function handleCM(event) {
+  event.preventDefault();
+}
+
+function handleSaveClick() {
+  var image = canvas.toDataURL("image/png");
+  var link = document.createElement("a");
+  link.href = image;
+  link.download = "PaintJS[🎁].png";
+  link.click();
+}
+
 if (canvas) {
   canvas.addEventListener("mousemove", onMouseMove);
   canvas.addEventListener("mousedown", startPainting);
   canvas.addEventListener("mouseup", stopPainting);
   canvas.addEventListener("mouseleave", stopPainting);
   canvas.addEventListener("click", handleCanvasClick);
+  canvas.addEventListener("contextmenu", handleCM);
 }
 
 Array.from(colors).forEach(function (color) {
@@ -86,4 +103,8 @@ if (range) {
 
 if (mode) {
   mode.addEventListener("click", handleModeClick);
+}
+
+if (save) {
+  save.addEventListener("click", handleSaveClick);
 }
