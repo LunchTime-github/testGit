@@ -73,6 +73,20 @@ body {
           box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
+.controles {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .controles__color {
   width: 50px;
   height: 50px;
@@ -80,6 +94,7 @@ body {
   -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
           box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  margin: 8px;
 }
 
 .controles__colors {
@@ -90,5 +105,38 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.controles__btns {
+  margin-bottom: 30px;
+}
+
+.controles__btns button {
+  all: unset;
+  cursor: pointer;
+  padding: 5px 0;
+  width: 80px;
+  border-radius: 8px;
+  border: 1px solid #eeeeee;
+  text-align: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.controles__btns button:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: black;
+  font-weight: bold;
+}
+
+.controles__range {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
