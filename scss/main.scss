@@ -18,16 +18,16 @@ body {
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-.controles{
-    &__color{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-        cursor: pointer;
-    }
-    &__colors{
-        display: flex;
-        flex-direction: row;
-    }
+.controles {
+  &__color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  &__colors {
+    display: flex;
+    flex-direction: row;
+  }
 }
