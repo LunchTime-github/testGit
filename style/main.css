@@ -123,17 +123,17 @@ body {
   -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
           box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.5);
+  color: black;
   margin: 0 5px;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: bold;
 }
 
-.controles__btns button:focus {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  color: black;
-  font-weight: bold;
+.controles__btns button:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .controles__range {

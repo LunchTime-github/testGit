@@ -48,17 +48,17 @@ body {
       background-color: #ffffff;
       box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
       font-size: 18px;
-      color: rgba(0, 0, 0, 0.5);
+      color: rgba(0, 0, 0, 1);
       margin: 0 5px;
-      transition: all 0.1s;
-      &:focus{
-          transform: scale(1.1);
-          color: rgba(0, 0, 0, 1);
-          font-weight: bold;
+      transition: all 0.3s;
+      font-weight: bold;
+      &:active {
+        transform: scale(0.98);
+        color: rgba(0, 0, 0, 0.5);
       }
     }
   }
-  &__range{
-      margin-bottom: 20px;
+  &__range {
+    margin-bottom: 20px;
   }
 }
